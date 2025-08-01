@@ -28,7 +28,7 @@ export default function Navbar() {
           item.removeEventListener('mouseenter', handleHover);
         });
       };
-    }, 500);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
