@@ -19,9 +19,21 @@
 .helpBtn{
   width: 193px;
   height: 48px;
-  background: #BE1622;
-  border-radius: 12px;
+  background: #BE1622 !important;
+  border-radius: 12px !important;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .mobileIcon{
+    position: relative;
+  }
+
+  .helpContent{
+    align-items: center;
+    margin-top: -61px;
+    margin-bottom: 20px;
+  }
 }

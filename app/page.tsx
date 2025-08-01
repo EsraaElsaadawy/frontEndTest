@@ -1,18 +1,20 @@
 'use client';
 
-import TopSection from "../components/TopSection";
-import Navbar from "../components/Navbar";
-import Courses from "@/components/Courses";
-import UpcomingCourseCard from "@/components/UpcomingCourseCard";
-import CourseCategories from "@/components/CourseCategories";
-import Subscribe from "../components/Subscribe";
-import StatsSection from "../components/StatsSection";
-import Partners from "../components/Partners";
-import HelpSection from "../components/HelpSection";
+import TopSection from "../components/TopSection/TopSection";
+import Navbar from "../components/Navbar/Navbar";
+import Courses from "@/components/Courses/Courses";
+import UpcomingCourseCard from "@/components/UpcomingCourseCard/UpcomingCourseCard";
+import CourseCategories from "@/components/CourseCategories/CourseCategories";
+import Subscribe from "../components/Subscribe/Subscribe";
+import StatsSection from "../components/StatsSection/StatsSection";
+import Partners from "../components/Partners/Partners";
+import HelpSection from "../components/HelpSection/HelpSection";
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import TestimonialsSection from "@/components/TestimonialsSection";
+import TestimonialsSection from "@/components/TestimonialsSection/TestimonialsSection";
 import TutorsSection from "@/components/Tutor/TutorsSection";
 import TopicsBar from "@/components/TopicsBar/TopicsBar";
+import FaqSection from "@/components/FaqSection/FaqSection";
+import Footer from "@/components/Footer/footer";
 
 export default function Home() {
   return (
@@ -34,6 +36,8 @@ export default function Home() {
       <Partners />
       <TutorsSection />
       <HelpSection />
+      <FaqSection/>
+      <Footer/>
     </main>
   );
 }

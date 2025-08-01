@@ -1,4 +1,4 @@
-.navbarBoxContainer{
+.navbarBoxContainer {
     width: 100%;
     position: fixed !important;
     top: 0;
@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: column;
 }
-.navbarAd{
+
+.navbarAd {
     width: 100%;
     height: 48px;
     background: #29295199;
@@ -16,55 +17,83 @@
     justify-content: center;
     align-items: center;
 }
-.navbarAd p , .navbarAd button{
+
+.navbarAd p,
+.navbarAd button {
     margin-bottom: 0;
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
 }
-.navbarAd button{
+
+.navbarAd button {
     background-color: transparent;
     text-decoration: underline;
     border: none;
     margin-right: 20px;
 }
-.navbarBox{
+
+.navbarBox {
     width: 100%;
     height: 64px;
     background: #00040D;
     backdrop-filter: blur(100px);
     padding: 0 20px;
 }
-.drobDownTitle{
+
+.drobDownTitle {
     color: #FFFFFF !important;
     font-weight: bold;
     font-size: 14px;
     margin-inline-start: 24px;
 }
-.drobDownTitle::after{
+
+.drobDownTitle::after {
     display: none !important;
 }
-.drobDownTitle img{
+
+.drobDownTitle img {
     margin-inline-start: 6px;
 }
-.drobDownMenu{
-    background: #141820 !important;
+
+.drobDownMenu,
+.nestedDropdown {
     width: 335px;
     padding: 20px !important;
     border-radius: 16px;
+}
+
+.drobDownMenu {
+    background: #141820 !important;
     right: 22px;
 }
-.drobDownItem , .drobDownItemTitle{
+
+.nestedDropdown{
+    right: calc(100% + 20px);
+    top: 0px;
+    background-color: #272A32 !important;
+}
+
+.noArrow::before {
+  display: none !important;
+}
+
+
+.drobDownItem,
+.drobDownItemTitle {
     color: #FFFFFF !important;
     font-size: 16px;
     display: flex !important;
     align-items: center;
     justify-content: space-between;
 }
-.drobDownItem::after , .drobDownItemTitle::after{
+
+.drobDownItem::after,
+.drobDownItemTitle::after {
     display: none !important;
 }
-.drobDownItem::before{
+
+.drobDownItem::before {
     background-image: url('/images/arrowRight.png') !important;
     width: 100%;
     content: '';
@@ -75,13 +104,16 @@
     background-repeat: no-repeat;
     z-index: 9;
 }
-.drobDownItem:hover{
+
+.drobDownItem:hover {
     background: #272A32 !important;
 }
-.drobDownItemTitle:hover{
+
+.drobDownItemTitle:hover {
     background: initial !important;
 }
-.drobDownButton{
+
+.drobDownButton {
     background: #FFFFFF !important;
     border-radius: 12px !important;
     display: flex !important;
@@ -93,6 +125,7 @@
     height: 40px;
     margin-top: 20px;
 }
+
 .navbarSearch {
     background: #191D25 !important;
     height: 40px;
@@ -102,25 +135,32 @@
     padding-inline-start: 52px !important;
     border: none !important;
 }
-.navbarForm{
+
+.navbarForm {
     position: relative;
 }
-.searchIcon{
+
+.searchIcon {
     position: absolute;
     inset-inline-start: 20px;
 }
+
 .navbarSearch::placeholder {
-  color: #B0B0BA !important;
-  opacity: 1; 
+    color: #B0B0BA !important;
+    opacity: 1;
 }
-.navbarButton{
+
+.navbarButton {
     font-size: 14px;
     font-weight: bold;
     color: #FFFFFF;
     background: transparent;
     border: none;
 }
-.noLimits , .videos , .login{
+
+.noLimits,
+.videos,
+.login {
     background: #292951;
     height: 40px;
     padding: 20px;
@@ -132,64 +172,103 @@
     margin-inline-start: 12px;
     width: 149px;
 }
-.noLimits p , .videos p , .login p{
+
+.noLimits p,
+.videos p,
+.login p {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 0;
     margin-inline-start: 8px;
 }
-.videos{
+
+.videos {
     background: #BE1622;
 }
-.login{
+
+.login {
     background: #191D25;
 }
 
+
+
 @media only screen and (max-width: 767px) {
-.navbarAd p , .navbarAd button{
-    font-size: 12px;
-}
-.navbarAd{
-    padding: 0 12px;
-    justify-content: space-between;
-}
-.noLimits, .navbarButton, .login , .navbarBox ul , .navbarSearch {
-   display: none !important;
-}
-.flexGrow {
-  flex-grow: 0 !important;
-}
-.searchIcon{
-  inset-inline-start: -17px;
-}
+
+    .navbarAd p,
+    .navbarAd button {
+        font-size: 12px;
+    }
+
+    .navbarAd {
+        padding: 0 12px;
+        justify-content: space-between;
+    }
+
+    .noLimits,
+    .navbarButton,
+    .login,
+    .navbarBox ul,
+    .navbarSearch {
+        display: none !important;
+    }
+
+    .flexGrow {
+        flex-grow: 0 !important;
+    }
+
+    .searchIcon {
+        inset-inline-start: -17px;
+    }
 }
 
 @media only screen and (min-width: 767px) {
-.flexGrow {
-  flex-grow: 1 !important;
-}
+    .flexGrow {
+        flex-grow: 1 !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-.navbarSearch{
-  display: none !important;
-}
-.navbarAd p , .navbarAd button , .drobDownTitle , .drobDownButton , .navbarButton , .noLimits p , .videos p , .login p{
-  font-size: 12px;
-}
-.noLimits , .videos , .login{
-  padding: 20px 2px;
-  width: 110px;
-}
+    .navbarSearch {
+        display: none !important;
+    }
+
+    .navbarAd p,
+    .navbarAd button,
+    .drobDownTitle,
+    .drobDownButton,
+    .navbarButton,
+    .noLimits p,
+    .videos p,
+    .login p {
+        font-size: 12px;
+    }
+
+    .noLimits,
+    .videos,
+    .login {
+        padding: 20px 2px;
+        width: 110px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-.navbarAd p , .navbarAd button , .drobDownTitle , .drobDownButton , .navbarButton , .noLimits p , .videos p , .login p{
-  font-size: 12px;
-}
-.noLimits , .videos , .login{
-  padding: 20px 2px;
-  width: 110px;
-}
+
+    .navbarAd p,
+    .navbarAd button,
+    .drobDownTitle,
+    .drobDownButton,
+    .navbarButton,
+    .noLimits p,
+    .videos p,
+    .login p {
+        font-size: 12px;
+    }
+
+    .noLimits,
+    .videos,
+    .login {
+        padding: 20px 2px;
+        width: 110px;
+    }
 }

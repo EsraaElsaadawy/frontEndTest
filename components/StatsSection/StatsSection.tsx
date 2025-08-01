@@ -24,25 +24,25 @@ export default function StatsSection() {
                </p>
       
               <div className="row gy-4 justify-content-center col-12">
-                <div className="col-3">
+                <div className="col-md-3 col-6">
             <div className="p-3">
               <h3 className="fw-bold fs-2" style={{ color: '#BE1622'}}>+4 آلاف</h3>
               <p className="mb-0 fs-5 text-white">ساعة تدريبية</p>
             </div>
                 </div>
-                 <div className="col-3">
+                 <div className="col-md-3 col-6">
             <div className="p-3">
               <h3 className="fw-bold fs-2" style={{ color: '#BE1622'}}>1100+</h3>
               <p className="mb-0 fs-5 text-white">دورة تدريبية</p>
             </div>
                 </div>
-                <div className="col-3">
+                <div className="col-md-3 col-6">
             <div className="p-3">
               <h3 className="fw-bold fs-2" style={{ color: '#BE1622'}}>600+</h3>
               <p className="mb-0 fs-5 text-white">خبير ومدرب</p>
             </div>
                 </div>
-                <div className="col-3">
+                <div className="col-md-3 col-6">
             <div className="p-3 shadow-sm">
               <h3 className="fw-bold fs-2" style={{ color: '#BE1622'}}>10+</h3>
               <p className="mb-0 fs-5 text-white">سنوات خبرة</p>

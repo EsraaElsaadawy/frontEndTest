@@ -19,7 +19,7 @@ export default function HelpSection() {
                 />
           </div>
 
-          <div className="col-md-6 text-white d-flex flex-column">
+          <div className={`col-md-6 text-white d-flex flex-column ${styles.helpContent}`}>
                 <h2 className="fw-bold mb-3">تحتاج مساعدة أو استفسار؟</h2>
                 <p className="mb-4">قم بالتواصل معنا عبر WhatsApp</p>
                 <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className={`btn d-flex align-items-center text-white ${styles.helpBtn}`}>

@@ -79,8 +79,8 @@ const TestimonialsSection: React.FC = () => {
 
   return (
     <section className={`${styles.testimonialsSection} py-5`} dir="rtl">
-      <div className="container">
-        <h2 className="text-center text-light fw-bold mb-4">آراء المتعلمين في تدرب</h2>
+      <div className="container p-0">
+            <h2 className="text-light fw-bold m-0">آراء المتعلمين <span className="text-danger">في تدرب</span></h2>
 
         <div className="position-relative">
           {canScrollLeft && (
