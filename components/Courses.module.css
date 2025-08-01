@@ -1,0 +1,36 @@
+.hideScrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.mostViewed {
+  width: 75px;
+  height: 18px;
+  border-radius: 6px;
+  background: #FFFFFF52;
+  backdrop-filter: blur(16px);
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.underLine {
+  display: block;
+  position: absolute;
+  background: #FFFFFF;
+  width: 20px;
+  height: 4px;
+  bottom: -8px;
+  right: 0;
+}
+

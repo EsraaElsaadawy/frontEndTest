@@ -1,0 +1,26 @@
+.partnersBg{
+    background-image: url(/images/PartnersBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 628px;
+}
+
+.clampLines {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;       
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;             
+  max-width: 29.5vw;           
+}
+
+.partnersBtn{
+    width: 210px;
+    height: 48px;
+    border-radius: 12px;
+    background: #BE1622;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}

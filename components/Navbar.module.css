@@ -1,0 +1,195 @@
+.navbarBoxContainer{
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    z-index: 9999;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+.navbarAd{
+    width: 100%;
+    height: 48px;
+    background: #29295199;
+    backdrop-filter: blur(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarAd p , .navbarAd button{
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbarAd button{
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    margin-right: 20px;
+}
+.navbarBox{
+    width: 100%;
+    height: 64px;
+    background: #00040D;
+    backdrop-filter: blur(100px);
+    padding: 0 20px;
+}
+.drobDownTitle{
+    color: #FFFFFF !important;
+    font-weight: bold;
+    font-size: 14px;
+    margin-inline-start: 24px;
+}
+.drobDownTitle::after{
+    display: none !important;
+}
+.drobDownTitle img{
+    margin-inline-start: 6px;
+}
+.drobDownMenu{
+    background: #141820 !important;
+    width: 335px;
+    padding: 20px !important;
+    border-radius: 16px;
+    right: 22px;
+}
+.drobDownItem , .drobDownItemTitle{
+    color: #FFFFFF !important;
+    font-size: 16px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.drobDownItem::after , .drobDownItemTitle::after{
+    display: none !important;
+}
+.drobDownItem::before{
+    background-image: url('/images/arrowRight.png') !important;
+    width: 100%;
+    content: '';
+    position: absolute;
+    inset-inline-end: 0;
+    top: 7px;
+    bottom: 0;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+.drobDownItem:hover{
+    background: #272A32 !important;
+}
+.drobDownItemTitle:hover{
+    background: initial !important;
+}
+.drobDownButton{
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold !important;
+    color: #00040D !important;
+    height: 40px;
+    margin-top: 20px;
+}
+.navbarSearch {
+    background: #191D25 !important;
+    height: 40px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    padding-inline-start: 52px !important;
+    border: none !important;
+}
+.navbarForm{
+    position: relative;
+}
+.searchIcon{
+    position: absolute;
+    inset-inline-start: 20px;
+}
+.navbarSearch::placeholder {
+  color: #B0B0BA !important;
+  opacity: 1; 
+}
+.navbarButton{
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+}
+.noLimits , .videos , .login{
+    background: #292951;
+    height: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: none;
+    margin-inline-start: 12px;
+    width: 149px;
+}
+.noLimits p , .videos p , .login p{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-inline-start: 8px;
+}
+.videos{
+    background: #BE1622;
+}
+.login{
+    background: #191D25;
+}
+
+@media only screen and (max-width: 767px) {
+.navbarAd p , .navbarAd button{
+    font-size: 12px;
+}
+.navbarAd{
+    padding: 0 12px;
+    justify-content: space-between;
+}
+.noLimits, .navbarButton, .login , .navbarBox ul , .navbarSearch {
+   display: none !important;
+}
+.flexGrow {
+  flex-grow: 0 !important;
+}
+.searchIcon{
+  inset-inline-start: -17px;
+}
+}
+
+@media only screen and (min-width: 767px) {
+.flexGrow {
+  flex-grow: 1 !important;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.navbarSearch{
+  display: none !important;
+}
+.navbarAd p , .navbarAd button , .drobDownTitle , .drobDownButton , .navbarButton , .noLimits p , .videos p , .login p{
+  font-size: 12px;
+}
+.noLimits , .videos , .login{
+  padding: 20px 2px;
+  width: 110px;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+.navbarAd p , .navbarAd button , .drobDownTitle , .drobDownButton , .navbarButton , .noLimits p , .videos p , .login p{
+  font-size: 12px;
+}
+.noLimits , .videos , .login{
+  padding: 20px 2px;
+  width: 110px;
+}
+}

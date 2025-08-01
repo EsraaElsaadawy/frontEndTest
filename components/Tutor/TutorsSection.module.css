@@ -1,0 +1,89 @@
+.tutorsSection {
+  background-color: #00040d;
+  color: white;
+  padding-top: 30px;
+}
+
+.mainTutor {
+  position: relative; 
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  overflow: hidden; 
+}
+
+.mainTutor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+}
+
+.sideTutor {
+  position: relative;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.sideTutor img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.tutorInfo {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1; 
+}
+
+.tutorName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tutorName,
+.sideTutor p {
+  color: white;
+}
+
+/* تأثير hover */
+.mainTutor:hover, .sideTutor:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tutorInfo {
+  margin-left: 20px;
+}
+
+.tutorInfo h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tutorInfo h5 {
+  font-size: 18px;
+}
+
+.tutorInfo p {
+  font-size: 14px;
+  color: #bbb;
+}

@@ -1,0 +1,13 @@
+.topicBtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    width: 105px;
+    height: 40px;
+    border: 1px solid #333A47;
+    border-radius: 12px !important;
+    white-space: nowrap;
+}

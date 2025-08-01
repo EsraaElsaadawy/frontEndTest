@@ -1,0 +1,27 @@
+.helpSection {
+  background-color: #0D1119;
+  min-height: 460px;
+  overflow: visible; 
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.mobileIcon {
+  position: absolute;
+  top: -90px; 
+  right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.helpBtn{
+  width: 193px;
+  height: 48px;
+  background: #BE1622;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

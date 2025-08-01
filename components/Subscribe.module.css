@@ -1,0 +1,49 @@
+.subscribeBG{
+    background-image: url(/images/BGSubscribe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.subscribeBG::after{
+    content:'';
+    position: absolute;
+    background: #25D5AB1A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+.subscribeContent{
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.subscribeContent p{
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.subscribeBtn{
+    background: #60D2B4;
+    box-shadow: 0px 4px 24px 0px #00000033;
+    border-radius: 12px;
+    width: 295px;
+    height: 50px;
+    color: #00040D;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
